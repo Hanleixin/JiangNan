@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/zzbackground"
+    app:backgroundAttr="zzbackground"
+    tools:context="com.bwei.newhan.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:backgroundAttr="colorPrimary"
+            android:layout_above="@+id/main_fm"
+            app:titleTextColor="?attr/zztextColor"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fm"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="?attr/zztextColor"
+        app:textColorAttr="zztextColor"
+        android:background="?attr/zzItemBackground"
+        app:backgroundAttr="zzItemBackground"
+        android:layout_above="@+id/main_ll"/>
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/main_btn1"
+            android:layout_weight="1"
+            android:textColor="?attr/zztextColor"
+            android:background="?attr/zzItemBackground"
+            app:backgroundAttr="zzItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:text="模块一"/>
+
+        <Button
+            android:id="@+id/main_btn2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="?attr/zztextColor"
+            android:background="?attr/zzItemBackground"
+            app:backgroundAttr="zzItemBackground"
+            android:textAllCaps="false"
+            android:text="模块二"/>
+    </LinearLayout>
+</RelativeLayout>

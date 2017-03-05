@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/zzbackground"
+    app:backgroundAttr="zzbackground"
+    tools:context="com.bwei.newhan.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        app:textColorAttr="zztextColor"
+        app:backgroundAttr="zzItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/me_imageView"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:textColor="?attr/zztextColor"
+            app:textColorAttr="zztextColor"
+            app:backgroundAttr="zzItemBackground" />
+
+        <TextView
+            android:id="@+id/me_textView"
+            android:text="名字"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/me_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="?attr/zztextColor"
+            app:textColorAttr="zztextColor"
+            app:backgroundAttr="zzItemBackground" />
+
+        <Button
+            android:id="@+id/but_join"
+            android:text=" 实现第三方登录 "
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roll_bg"
+            android:textColor="?attr/zztextColor"
+            app:textColorAttr="zztextColor"
+            app:backgroundAttr="zzItemBackground" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/but_share"
+        android:text=" 第三方分享 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roll_bg"
+        android:textColor="?attr/zztextColor"
+        app:textColorAttr="zztextColor"
+        app:backgroundAttr="zzItemBackground" />
+
+
+</LinearLayout>
